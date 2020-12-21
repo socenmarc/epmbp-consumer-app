@@ -25,7 +25,7 @@
     "start:local": "npm run deploy:local && npm start",
     "build": "cds build/all --clean",
     "build:cf": "cp mta-cf.yaml mta.yaml && mbt build -p=cf && rm mta.yaml",
-    "build:xsa": "cp mta-xsa.yaml mta.yaml && mbt build -p=xsa && rm mta.yaml",
+    "build:xsa": "copy mta-xsa.yaml mta.yaml && mbt build -p=xsa && rm mta.yaml",
     "build:xs-security": "cds compile srv/ --to xsuaa  > xs-security.json",
     "generate-odata-client": "generate-odata-client --inputDir srv/external --outputDir srv/odata-client --forceOverwrite",
     "deploy:local": "cds deploy",

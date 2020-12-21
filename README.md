@@ -121,6 +121,14 @@ The connection information to the ES5 system is provided via a user-provided ser
 }
 ```
 
+Seidor landscape:
+```JSON
+{
+    "name": "ES5",
+    "url": "http://saps50.seidor.es:8001"
+}
+```
+
 The credentials for the backend access should never appear in a Git repository. That is why I suggest to use a MTA extension. Please create the file *xsa.mtaext* in the root folder with the following content. Replace YourES5user and YourES5password with your own credentials.
 
 ```YAML
